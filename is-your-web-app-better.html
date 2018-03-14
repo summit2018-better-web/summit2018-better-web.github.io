@@ -56,19 +56,33 @@
             <h2>What makes your app stand out?</h2>
 
             <ul class="no-bullets">
-                <li>UX</li>
-                <li>Performance</li>
-                <li>Quality</li>
-                <li>Tools</li>
+                <li>
+                    <img src="common/img/icons/UX-UI-Icon_35.svg" style="height:1em; margin: 0" class="plain">
+                    <span>UX</span>
+                </li>
+                <li>
+                    <img src="common/img/icons/UX-UI-Icon_40.svg" style="height:1em; margin: 0" class="plain">
+                    <span>Performance</span>
+                </li>
+                <li>
+                    <img src="common/img/icons/UX-UI-Icon_25.svg" style="height:1em; margin: 0" class="plain">
+                    <span>Quality</span>
+                </li>
+                <li>
+                    <img src="common/img/icons/UX-UI-Icon_26.svg" style="height:1em; margin: 0" class="plain">
+                    <span>Tools</span>
+                </li>
             </ul>
         </section>
         
-        <section>
-            <h1 style="font-size: 1.7em">
+        <section data-background-image="common/img/shapes/Fixed_Shape_3_SVG/Fixed_Shape_3_DeepPurple_RGB.svg"
+        data-background-color="var(--cap-gray)">
+            <h1 style="font-size: 1.7em" class="white">
                 <div>User interface</div>
                 <div style="margin-bottom: 1em">is like a joke.</div>
-                <div>If you have to explain it,</div>
-                <div>it is not that good...</div>
+                <div class="green">If you have to explain it,</div>
+                <div class="green">it is not that good...</div>
+                <div class="green">; )</div>
             </h1>
         </section>
 
@@ -80,17 +94,19 @@
             <img src="common/img/challenging areas.PNG" alt="challenging areas" class="plain">
         </section>
         
-        <section>
-            <h1>
+        <section data-background-image="common/img/shapes/Fixed_Shape_7_SVG/Fixed_Shape_7_VibrantBlue_RGB.svg" 
+                 data-background-color="var(--cap-blue)">
+            <h1 class="white">
                 <div>Fast</div>
                 <div>by default!</div>
             </h1>
         </section>
         
-        <section>
-            <h1>
+        <section data-background-image="common/img/shapes/Fixed_Shape_2_SVG/Fixed_Shape_2_CapgeminiBlue_RGB.svg"
+                 data-background-color="var(--cap-light-blue)">
+            <h1 class="white">
                 <div>Mobile changes</div>
-                <div>...</div>
+                <div class="red">...</div>
                 <div>everything</div>
             </h1>
         </section>
@@ -101,63 +117,87 @@
         </section>
 
         <section>
-            <h2>Application size - native vs PWA</h2>
+            <h2>Application size</h2>
         </section>
 
         <section>
-            <h2>What impacts loading?</h2>
-
-            <ul class="no-bullets">
-                <li>The network</li>
-                <li>Parsing javascript</li>
-                <li>Parsing css</li>
-                <li>Images</li>
-                <li>Third party code</li>
-                <li>Parser blocking patterns</li>
-                <li>Disk IO</li>
-                <li>Cache eviction</li>
-                <li>IPC jank</li>
-                <li>RTTS</li>
-                <li>Thermal throttling</li>
-                <li>...</li>
-            </ul>
+            <div style="display: flex;
+                justify-content: space-around;
+            ">
+                <h2 style="align-self: center">
+                    <div>
+                        What 
+                    </div> 
+                    <div>
+                        impacts
+                    </div> 
+                    <div>
+                        loading?
+                    </div> 
+                </h2>
+                <ul class="no-bullets">
+                    <li>The network</li>
+                    <li>Parsing javascript</li>
+                    <li>Parsing css</li>
+                    <li>Images</li>
+                    <li>Third party code</li>
+                    <li>Parser blocking patterns</li>
+                    <li>Disk IO</li>
+                    <li>Cache eviction</li>
+                    <li>IPC jank</li>
+                    <li>RTTS</li>
+                    <li>Thermal throttling</li>
+                    <li>...</li>
+                </ul>
+            </div>
         </section>
 
         <section>
-            <h2>
-                JS is the 
-                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">heaviest</a>
-            </h2>
-
-            <blockquote>
-                Networks, CPUs and disks all hate you. On the client you pay for what you send in ways you can`t easily see</li>
-            </blockquote>
-            <div>Alex Russell, Chrome</div>
-
+            <div style="display: flex;
+                flex-direction: column;
+            ">
+                <div style="
+                    border-left: 0.4em solid var(--cap-green)
+                ">
+                    <div>
+                        Networks, CPUs and disks all hate you. 
+                    </div> 
+                    <div>
+                        On the client you pay for what you send in ways you <span class="red">can't easily see</span>.
+                    </div>
+                </div>
+                <div style="align-self: flex-end;
+                    font-style: italic; 
+                    color: gray;
+                    padding: 1em;
+                ">
+                    Alex Russell, Chrome
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>2017 best practices for loading</h2>
 
             <ul class="no-bullets">
-                    <li>Compress diligently (GZip, Brotli)</li>
-                    <li>Cache effectively (HTTP, service workers)</li>
-                    <li>Minify and optimize</li>
-                    <li>Preresolve DNS for critical resources</li>
-                    <li>Preload critical resources</li>
-                    <li>Respect data plans</li>
-                    <li>Stream HTML responses</li>
-                    <li>Make fewer HTTP requests</li>
-                    <li>have a font loading strategy</li>
-                    <li>Send less JS (code splitting)</li>
-                    <li>Lazy load non-critical resources</li>
-                    <li>Route based chunking</li>
-                    <li>Library sharding</li>
-                    <li>PRPL pattern</li>
-                    <li>Tree shaking (Webpack, RollUp)</li>
-                    <li>Serve ES 2015 for modern browsers (babe-preset-env)</li>
-                    <li>Scope hoisting (Webpack)</li>
-                    <li>Dont ship dev code to production</li>
+                <li>Compress diligently (GZip, Brotli)</li>
+                <li>Cache effectively (HTTP, service workers)</li>
+                <li>Minify and optimize</li>
+                <li>Preresolve DNS for critical resources</li>
+                <li>Preload critical resources</li>
+                <li>Respect data plans</li>
+                <li>Stream HTML responses</li>
+                <li>Make fewer HTTP requests</li>
+                <li>have a font loading strategy</li>
+                <li>Send less JS (code splitting)</li>
+                <li>Lazy load non-critical resources</li>
+                <li>Route based chunking</li>
+                <li>Library sharding</li>
+                <li>PRPL pattern</li>
+                <li>Tree shaking (Webpack, RollUp)</li>
+                <li>Serve ES 2015 for modern browsers (babe-preset-env)</li>
+                <li>Scope hoisting (Webpack)</li>
+                <li>Dont ship dev code to production</li>
             </ul>
         </section>
 
@@ -181,6 +221,14 @@
                 <li>First Meaningful paint</li>
                 <li>Time to interactive</li>
             </ul>
+        </section>
+
+
+        <section>
+            <h3>
+                Cost of JavaScript 
+                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">heaviest</a>
+            </h3>
         </section>
 
         <section>
