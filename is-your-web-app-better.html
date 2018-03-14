@@ -94,20 +94,12 @@
             <img src="common/img/challenging areas.PNG" alt="challenging areas" class="plain">
         </section>
         
-        <section data-background-image="common/img/shapes/Fixed_Shape_7_SVG/Fixed_Shape_7_VibrantBlue_RGB.svg" 
-                 data-background-color="var(--cap-blue)">
-            <h1 class="white">
-                <div>Fast</div>
-                <div>by default!</div>
-            </h1>
-        </section>
-        
         <section data-background-image="common/img/shapes/Fixed_Shape_2_SVG/Fixed_Shape_2_CapgeminiBlue_RGB.svg"
                  data-background-color="var(--cap-light-blue)">
             <h1 class="white">
                 <div>Mobile changes</div>
                 <div class="red">...</div>
-                <div>everything</div>
+                <div class="fragment">everything</div>
             </h1>
         </section>
         
@@ -125,6 +117,14 @@
                 <li><span class="red">Always</span> up to date</li>
                 <li>New APIs, pages can adapt to <span class="red">device</span> and <span class="red">network conditions</span></li>
             </ul>
+        </section>
+
+        <section data-background-image="common/img/shapes/Fixed_Shape_7_SVG/Fixed_Shape_7_VibrantBlue_RGB.svg" 
+        data-background-color="var(--cap-blue)">
+            <h1 class="white">
+                <div>Fast</div>
+                <div>by default!</div>
+            </h1>
         </section>
 
         <section>
@@ -184,7 +184,6 @@
         </section>
 
         <section class="best-practices-slide">
-
             <style>
                 .best-practices-slide ul li {
                     margin: 0.5em 0;
@@ -223,7 +222,7 @@
         </section>
 
         <section>
-            <h2>Performance  - user perception</h2>
+            <h2>User perception</h2>
 
             <div style="display: flex;
                 justify-content: space-between;
@@ -281,8 +280,8 @@
                 '300KB of JS' !== '300KB of image'
             </h3>
             <img src="common/img/1MB-parse-times.jpeg" alt="" style="height: 12em" class="plain">
-            <div class="green">
-                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">read more</a>
+            <div class="green" style="display:flex; justify-content: flex-end">
+                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">[read more]</a>
             </div>
         </section>
 
@@ -304,44 +303,90 @@
             </div>
         </section>
 
-        <section>
-            <h2>Take a look around</h2>
+        <section data-background-image="common/img/shapes/Fixed_Shape_1_SVG/Fixed_Shape_1_ZestGreen_RGB.svg" 
+                data-background-color="var(--cap-blue)">
+            <h1 class="white">
+                <div>Take</div>
+                <div>a look</div>
+                <div>around!</div>
+            </h1>
+        </section>
 
-            <ul class="no-bullets">
-                <li>RUM (Real User Metrics)</li>
-                <li>Look at average device</li>
-                <li><a href="https://www.webpagetest.org/">Web page test</a></li>
-                <li><a href="https://beta.httparchive.org/">Http Archive (beta)</a></li>
-                <li>Chrome user experience report</li>
-            </ul>
+        <section class="test-avg-device-slide">
+            <style>
+                .test-avg-device-slide .device-frame {
+                    width:100%; 
+                    border: red 3px solid; 
+                    height: 1em;
+                    position: absolute;
+                    top:3.8em;
+                }    
+            </style>
+            <h2 style="font-size: 1em">Test against average device</h2>
+            <img src="common/img/1MB-parse-times.jpeg" alt="" style="height: 12em" class="plain">
+            <div class="device-frame fragment fade-out" data-fragment-index="0"></div>
+            <div style="border-color: var(--cap-green); top: 7.8em" class="device-frame fragment" data-fragment-index="0"></div>
         </section>
 
         <section>
+            <h2>Web page test</h2>
+
+            <div class="replacement" style="">
+                <div class="fragment fade-out" data-fragment-index="0">
+                    <img src="common/img/web-page-test.png" alt="" style="height: 15em" class="plain">
+                </div>
+                <div class="fragment" data-fragment-index="0">
+                    <img src="common/img/web-page-test-welt.png" alt="" style="height: 15em" class="plain">
+                </div>
+            </div>
+        </section>
+
+        <section data-background-iframe="https://beta.httparchive.org/reports/state-of-the-web">
+            <h1>HTTP archive (beta)</h1>
+        </section>
+
+        <section>
+            <h1>RUM <span style="font-size: 0.5em">(Real User Metrics)</span></h1>
+            <h3>Chrome UX report</h3>
+            <img src="common/img/chrome-user-report.PNG" alt="" style="height: 8em" class="plain">
+        </section>
+        
+        <section>
+            <img src="common/img/sample-query-chrome-ux.PNG" alt="" style="height: 14em" class="plain">
+        </section>
+
+        <!-- <section>
             <h2>Unlock super powers in your app</h2>
             <ul class="no-bullets">
                 <li>Use modern frameworks</li>
                 <li></li>
             </ul>
+        </section> -->
+
+
+        <section data-background-image="common/img/shapes/Fixed_Shape_2_SVG/Fixed_Shape_2_DeepPurple_RGB.svg" 
+                data-background-color="var(--cap-blue)">
+            <h1 class="white">
+                Tools
+            </h1>
         </section>
 
         <section>
-                <h2>Tools</h2>
+            <ul class="no-bullets">
+                <li>Chrome dev tools</li>
+                <li>Chrome headless</li>
+                <li>Chrome puppeteer</li>
+                <li>Storybook</li>
+                <li>Galen</li>
+                <li>Gatling</li>
+                <li>sitespeed.io</li>
+                <li>lighthouse</li>
+                <li>Graphana</li>
+                <li>cypress</li>
+                <li>bundle analyzers</li>
+            </ul>
+        </section>
     
-                <ul class="no-bullets">
-                    <li>Chrome dev tools</li>
-                    <li>Chrome headless</li>
-                    <li>Chrome puppeteer</li>
-                    <li>Storybook</li>
-                    <li>Galen</li>
-                    <li>Gatling</li>
-                    <li>sitespeed.io</li>
-                    <li>lighthouse</li>
-                    <li>Graphana</li>
-                    <li>cypress</li>
-                    <li>bundle analyzers</li>
-                </ul>
-            </section>
-        
 
 
         
