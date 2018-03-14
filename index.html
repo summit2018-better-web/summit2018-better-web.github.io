@@ -1,10 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Web App Is Better Than Yours (Summit 2018)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Meet architects</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <link rel="icon" href="common/img/favicon.ico">
+
+    <link rel="stylesheet" href="reveal.js-3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css">
+    <link rel="stylesheet" href="common/css/common.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal.js-3.6.0/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <!-- <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script> -->
 </head>
 <body>
-<h1>My Web App Is Better Than Yours</h1>
+<div class="devon reveal">
+    <div class="slides">
+
+        <style>
+            .reveal section .floating-lecture-name {
+                font-size: 1em;
+            }    
+            .reveal section .lecture-container h1 {
+                position: absolute;
+            }
+            .reveal section .lecture-container h1:first-of-type {
+                width: 10em;
+                margin-top: 9em;
+                margin-left: 3em;
+            }
+            .reveal section .lecture-container h1:last-of-type {
+                margin-top: 4em;
+                margin-left: 12em;
+            }
+        </style>
+
+        <section data-background-image="common/img/shapes/Fixed_Shape_3_SVG/Fixed_Shape_3_ZestGreen_RGB.svg">
+            <div style="z-index: -1; position: absolute; width:100%; margin-top: -1em">
+                <svg style="height: 16em;" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.61 66.21"><defs><style>.cls-1{fill:#12abdb;}.cls-2{fill:#0070ad;}</style></defs><title>Capgemini_Spade_2COL_RGB</title><path class="cls-1" d="M55.65,54.49a16,16,0,0,0,16-15.94C71,34.77,69.66,27.78,59.86,27.78c-10.71,0-14.27,15-23,24.63-.7,5.49-5.9,10.41-12.39,11.24,1.59,1.66,5.13,2.56,9.35,2.56,7.72,0,17.08-2.33,22-7.16-6.53.08-10.73-4.11-11.15-9.93A13.44,13.44,0,0,0,55.65,54.49Z"/><path class="cls-2" d="M71.59,37.91c-.19-10-5-18.53-12.35-25.3A66.43,66.43,0,0,0,40,.69L38.32,0h0C29.74,10.29,0,18,0,39.53A21.29,21.29,0,0,0,13.15,59a19.66,19.66,0,0,0,13.6.28,23.62,23.62,0,0,0,10.11-6.88c8.73-9.65,12.29-24.63,23-24.63,9.8,0,11.12,7,11.75,10.76C71.61,38.53,71.6,38.27,71.59,37.91Z"/></svg>
+            </div>
+
+            <div class="lecture-container">
+                <h1 class="white floating-lecture-name">
+                    <a href="is-your-web-app-better.html">
+                        My Web App Is Better Than Yours!
+                    </a>
+                </h1>
+
+                <h1 class="white floating-lecture-name">
+                    <a href="summit-app-pwa.html">
+                        State of PWA
+                    </a>
+                </h1>
+                
+            </div>
+
+
+        </section>
+    </div>
+</div>
+
+
+<script src="reveal.js-3.6.0/lib/js/head.min.js"></script>
+<script src="reveal.js-3.6.0/js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+        ]
+    });
+</script>
 </body>
 </html>
