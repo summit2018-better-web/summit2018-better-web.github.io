@@ -145,7 +145,7 @@
                     <li>Disk IO</li>
                     <li>Cache eviction</li>
                     <li>IPC jank</li>
-                    <li>RTTS</li>
+                    <li>RTTs</li>
                     <li>Thermal throttling</li>
                     <li>...</li>
                 </ul>
@@ -176,29 +176,55 @@
             </div>
         </section>
 
-        <section>
-            <h2>2017 best practices for loading</h2>
+        <section class="best-practices-slide">
 
-            <ul class="no-bullets">
-                <li>Compress diligently (GZip, Brotli)</li>
-                <li>Cache effectively (HTTP, service workers)</li>
-                <li>Minify and optimize</li>
-                <li>Preresolve DNS for critical resources</li>
-                <li>Preload critical resources</li>
-                <li>Respect data plans</li>
-                <li>Stream HTML responses</li>
-                <li>Make fewer HTTP requests</li>
-                <li>have a font loading strategy</li>
-                <li>Send less JS (code splitting)</li>
-                <li>Lazy load non-critical resources</li>
-                <li>Route based chunking</li>
-                <li>Library sharding</li>
-                <li>PRPL pattern</li>
-                <li>Tree shaking (Webpack, RollUp)</li>
-                <li>Serve ES 2015 for modern browsers (babe-preset-env)</li>
-                <li>Scope hoisting (Webpack)</li>
-                <li>Dont ship dev code to production</li>
-            </ul>
+            <style>
+                @keyframes blink-practices-header {
+                    0%   {opacity: 0;}
+                    50% {opacity: 1;}
+                    100% {opacity: 0;}
+                }
+                .best-practices-slide ul li {
+                    margin: 0.5em 0;
+                }
+            </style>
+
+            <h2 style="
+                animation: blink-practices-header 10s infinite;
+                position: fixed;
+                top: 4em;
+            ">2017 best practices for loading</h2>
+
+            <div style="display: flex;
+                justify-content: space-between;
+                font-size: 0.5em;
+                animation: blink-practices-header 10s infinite;
+                animation-delay: 5s;
+                opacity: 0;
+            ">
+                <ul class="no-bullets">
+                    <li>Compress diligently (GZip, Brotli)</li>
+                    <li>Cache effectively (HTTP, service workers)</li>
+                    <li>Minify and optimize</li>
+                    <li>Preresolve DNS for critical resources</li>
+                    <li>Preload critical resources</li>
+                    <li>Respect data plans</li>
+                    <li>Stream HTML responses</li>
+                    <li>Make fewer HTTP requests</li>
+                    <li>have a font loading strategy</li>
+                </ul>
+                <ul class="no-bullets">
+                    <li>Send less JS (code splitting)</li>
+                    <li>Lazy load non-critical resources</li>
+                    <li>Route based chunking</li>
+                    <li>Library sharding</li>
+                    <li>PRPL pattern</li>
+                    <li>Tree shaking (Webpack, RollUp)</li>
+                    <li>Serve ES 2015 for modern browsers (babe-preset-env)</li>
+                    <li>Scope hoisting (Webpack)</li>
+                    <li>Dont ship dev code to production</li>
+                </ul>
+            </div>
         </section>
 
         <section>
