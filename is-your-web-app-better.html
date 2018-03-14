@@ -117,7 +117,14 @@
         </section>
 
         <section>
-            <h2>Application size</h2>
+            <h2>Why?</h2>
+
+            <ul>
+                <li>Native apps size - <span class="red">10x-100x lower</span></li>
+                <li>PWA offline capabilities <span class="red">without</span> a need to install</li>
+                <li><span class="red">Always</span> up to date</li>
+                <li>New APIs, pages can adapt to <span class="red">device</span> and <span class="red">network conditions</span></li>
+            </ul>
         </section>
 
         <section>
@@ -179,28 +186,16 @@
         <section class="best-practices-slide">
 
             <style>
-                @keyframes blink-practices-header {
-                    0%   {opacity: 0;}
-                    50% {opacity: 1;}
-                    100% {opacity: 0;}
-                }
                 .best-practices-slide ul li {
                     margin: 0.5em 0;
                 }
             </style>
 
-            <h2 style="
-                animation: blink-practices-header 10s infinite;
-                position: fixed;
-                top: 4em;
-            ">2017 best practices for loading</h2>
+            <h2>2017 best practices for loading</h2>
 
             <div style="display: flex;
                 justify-content: space-between;
                 font-size: 0.5em;
-                animation: blink-practices-header 10s infinite;
-                animation-delay: 5s;
-                opacity: 0;
             ">
                 <ul class="no-bullets">
                     <li>Compress diligently (GZip, Brotli)</li>
@@ -211,7 +206,7 @@
                     <li>Respect data plans</li>
                     <li>Stream HTML responses</li>
                     <li>Make fewer HTTP requests</li>
-                    <li>have a font loading strategy</li>
+                    <li>Have a font loading strategy</li>
                 </ul>
                 <ul class="no-bullets">
                     <li>Send less JS (code splitting)</li>
@@ -222,48 +217,91 @@
                     <li>Tree shaking (Webpack, RollUp)</li>
                     <li>Serve ES 2015 for modern browsers (babe-preset-env)</li>
                     <li>Scope hoisting (Webpack)</li>
-                    <li>Dont ship dev code to production</li>
+                    <li>Don`t ship dev code to production</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>Evolving RAIL</h2>
+            <h2>Performance  - user perception</h2>
 
-            <ul class="no-bullets">
-                <li>Response</li>
-                <li>Animation</li>
-                <li>Idle</li>
-                <li>Load</li>
-            </ul>
+            <div style="display: flex;
+                justify-content: space-between;
+                font-size: 1em;
+            ">
+                <div style="flex:6;
+                    margin-top:1em;
+                ">
+                    <h3 class="green">RAIL</h3>
+                    <ul class="no-bullets">
+                        <li>Response</li>
+                        <li>Animation</li>
+                        <li>Idle</li>
+                        <li>Load</li>
+                    </ul>
+                </div>
+                <div style="flex:8">
+                    <h3 class="green">User happiness metrics</h3>
+                    <ul class="no-bullets">
+                        <li>First paint</li>
+                        <li>First Contentful Paint</li>
+                        <li>First Meaningful paint</li>
+                        <li>Time to interactive</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Use happiness metrics</h2>
-
-            <ul class="no-bullets">
-                <li>First paint</li>
-                <li>First Contentful Paint</li>
-                <li>First Meaningful paint</li>
-                <li>Time to interactive</li>
-            </ul>
+            <h3 class="green">User happiness metrics - BBC</h3>
+            <img src="common/img/bbc-metrics.png" alt="" class="plain">
         </section>
 
+        <section>
+            <h3 class="green">User happiness metrics - CNN</h3>
+            <img src="common/img/cnn-metrics.png" alt="" class="plain">
+        </section>
+
+        <section>
+            <h3 class="green">User happiness metrics - WELT</h3>
+            <img src="common/img/welt-metrics.png" alt="" class="plain">
+        </section>
+
+
+        <section data-background-image="common/img/shapes/Fixed_Shape_8_SVG/Fixed_Shape_8_TechRed_RGB.svg"
+                 data-background-color="white">
+                <h1 class="blue">
+                    <div>The cost of</div>
+                    <img src="common/img/js-logo-small.png" alt="" style="height: 2em" class="plain">
+                </h1>
+        </section>
 
         <section>
             <h3>
-                Cost of JavaScript 
-                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">heaviest</a>
+                '300KB of JS' !== '300KB of image'
             </h3>
+            <img src="common/img/1MB-parse-times.jpeg" alt="" style="height: 12em" class="plain">
+            <div class="green">
+                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">read more</a>
+            </div>
         </section>
 
         <section>
-            <h2>Can you afford 
-                <a href="https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/">it</a>
-                ?
-            </h2>
-
-            <img src="common/img/tti-budget.PNG" alt="Time to interactive budget" class="plain">
+            <h3>
+                '300KB of JS' !== '300KB of image'
+            </h3>
+            <img src="common/img/v8-parse-js.png" alt="" style="height: 12em" class="plain">
+            <div class="green" style="display:flex; justify-content: flex-end">
+                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">[read more]</a>
+            </div>
+        </section>
+        
+        <section data-background-color="#222c2d">
+            <h2 class="white">Can you afford it?</h2>            
+            <img src="common/img/tti-budget.PNG" alt="Time to interactive budget" style="height: 12em" class="plain">
+            <div class="green" style="display:flex; justify-content: flex-end">
+                <a href="https://infrequently.org/2017/10/can-you-afford-it-real-world-web-performance-budgets/">[read more]</a>
+            </div>
         </section>
 
         <section>
@@ -279,7 +317,11 @@
         </section>
 
         <section>
-            <h2>Unlock super powers in your app - new APIs</h2>
+            <h2>Unlock super powers in your app</h2>
+            <ul class="no-bullets">
+                <li>Use modern frameworks</li>
+                <li></li>
+            </ul>
         </section>
 
         <section>
