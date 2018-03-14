@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Meet architects</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <link rel="icon" href="common/img/favicon.ico">
+
+    <link rel="stylesheet" href="reveal.js-3.6.0/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js-3.6.0/css/theme/white.css">
+    <link rel="stylesheet" href="common/css/common.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="reveal.js-3.6.0/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <!-- <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script> -->
+</head>
+<body>
+<div class="devon reveal">
+    <div class="slides">
+       
+        <section data-background-image="common/img/shapes/Fixed_Shape_3_SVG/Fixed_Shape_3_ZestGreen_RGB.svg">            
+            <div style="display:flex; 
+                        justify-content: flex-end;
+                        align-items: center;
+            ">
+                <img style="margin: 0; width: 20%; background: none" class="plain" src="common/img/Capgemini_Logo_Color_RGB.png" alt="Capgemini"/>
+            </div>
+
+            <h1>
+                <div>My web app</div>
+                <div>is better</div>
+                <div>than <span class="red">yours!</span></div>
+            </h1>
+
+            <div style="display:flex; 
+                        justify-content: flex-end;
+            ">
+                <span style="font-style: italic" class="primaryFont">Bartek Pietrowski</span>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Make your app stand out</h2>
+
+            <ul class="no-bullets">
+                <li>Performance</li>
+                <li>UX</li>
+                <li>Quality</li>
+                <li>Tools</li>
+            </ul>
+        </section>
+
+    </div>
+</div>
+
+<script src="reveal.js-3.6.0/lib/js/head.min.js"></script>
+<script src="reveal.js-3.6.0/js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'reveal.js-3.6.0/plugin/markdown/marked.js'},
+            {src: 'reveal.js-3.6.0/plugin/markdown/markdown.js'},
+            {src: 'reveal.js-3.6.0/plugin/notes/notes.js', async: true},
+            {
+                src: 'reveal.js-3.6.0/plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
