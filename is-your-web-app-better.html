@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="common/css/common.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="reveal.js-3.6.0/lib/css/zenburn.css">
+    <!-- <link rel="stylesheet" href="reveal.js-3.6.0/lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="common/css/solarized-light.css">
 
     <!-- Printing and PDF exports -->
     <!-- <script>
@@ -46,11 +47,46 @@
 
             <div style="display:flex; 
                         justify-content: flex-end;
+                        align-items: center;
             ">
-                <span style="font-style: italic" class="primaryFont">Bartek Pietrowski</span>
+                <span style="font-weight: bold; margin-right: 0.1em" class="primaryFont">
+                    Bartek Pietrowski
+                </span>
+                <a href="https://www.linkedin.com/in/bart%C5%82omiej-pietrowski-8a6a844b/">
+                    <img src="common/img/linked-in-logo.png" style="width: 0.5em" alt="" class="plain">
+                </a> 
             </div>
         </section>
 
+        <section>
+                <h2 style="font-size: 1.2em; margin: 0;">You want to follow the slides?</h2>
+                <img style="height: 13em; margin: 0;" class="plain" src="common/img/slides_qr_code.svg" alt="">
+        </section>
+
+        <section data-background-color="#fdf6e3">
+            <pre style="box-shadow: none"><code class="javascript" style="max-height: none" data-trim data-escape>
+                    import { SeniorSoftwareEngineer } from 'Capgemini';
+                    const Bartek = SeniorSoftwareEngineer({
+                        age: 30,
+                        exp: [
+                            'React',
+                            'Angular',
+                            'SSR',
+                            'node.js',
+                            'Java',
+                            'Spring',
+                        ],
+                        interests: [
+                            'pwa','amp',
+                            'universal','web',
+                            'functional', 'reactive',
+                            'performance', 'clean-code',
+                        ],
+                        trainer: true,
+                    });
+                    export const software = Bartek.code({quality: 'good'});
+                </code></pre>
+        </section>
 
         <section>
             <h2>What makes your app stand out?</h2>
@@ -74,24 +110,57 @@
                 </li>
             </ul>
         </section>
-        
-        <section data-background-image="common/img/shapes/Fixed_Shape_3_SVG/Fixed_Shape_3_DeepPurple_RGB.svg"
-        data-background-color="var(--cap-gray)">
-            <h1 style="font-size: 1.7em" class="white">
+
+        <section data-background-color="var(--cap-light-blue)">
+            <h1 style="font-size: 1.7em" class="black">
                 <div>User interface</div>
                 <div style="margin-bottom: 1em">is like a joke.</div>
-                <div class="green">If you have to explain it,</div>
-                <div class="green">it is not that good...</div>
-                <div class="green">; )</div>
             </h1>
+            <h2 class="white">
+                <div >If you have to explain it,</div>
+                <div>it is not that good...</div>
+                <div>; )</div>
+            </h2>
         </section>
 
         <section>
-            <h1 style="font-size: 1.7em">
-                <div>Applications</div>
-                <div>for the Entire World</div>
-            </h1>
-            <img src="common/img/challenging areas.PNG" alt="challenging areas" class="plain">
+            <h2>I am not a designer<span style="font-size: 0.5em">, but</span></h2>
+            <ul class="no-bullets">
+                <li>
+                    <a href="http://www.fuckdropdowns.com/">
+                        Fuck dropdowns
+                    </a> 
+                    <span style="color: gray; font-size: 0.5em">
+                        my ikea example got deprecated 2 days ago :(
+                    </span>
+                </li>
+                <li>
+                    <a href="https://zeplin.io/">
+                        Zeplin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://storybook.js.org/">
+                        Storybook
+                    </a>
+                    <span style="color: gray; font-size: 0.5em">
+                        <3
+                    </span>
+                </li>
+                <li>
+                    <a href="https://webflow.com/">
+                        webflow
+                    </a>
+                </li>
+                <li>
+                    <a href="https://framer.com/x/">
+                        Framer X
+                    </a>
+                    <span style="color: gray; font-size: 0.5em">
+                        ohhhh... seems to be so promising
+                    </span>
+                </li>
+            </ul>
         </section>
         
         <section data-background-image="common/img/shapes/Fixed_Shape_2_SVG/Fixed_Shape_2_CapgeminiBlue_RGB.svg"
@@ -109,10 +178,23 @@
         </section>
 
         <section>
-            <h2>Why?</h2>
+            <h2>... and sth more recent</h2>
+            <img src="common/img/page_stats.png" alt="sample audience" class="plain">
+        </section>
+
+        <section>
+            <h1 style="font-size: 1.7em">
+                <div>Applications</div>
+                <div>for the Entire World</div>
+            </h1>
+            <img src="common/img/challenging areas.PNG" alt="challenging areas" class="plain">
+        </section>
+
+        <section>
+            <h2>Why WEB?</h2>
 
             <ul>
-                <li>Native apps size - <span class="red">10x-100x lower</span></li>
+                <li>Native apps size - <span class="red">10x-100x higher</span></li>
                 <li>PWA offline capabilities <span class="red">without</span> a need to install</li>
                 <li><span class="red">Always</span> up to date</li>
                 <li>New APIs, pages can adapt to <span class="red">device</span> and <span class="red">network conditions</span></li>
@@ -222,6 +304,39 @@
         </section>
 
         <section>
+            <h2>
+                SSR vs. progressive
+            </h2>
+            
+            <ul class="no-bullets" style="padding-left: 2em">
+                <li>SPA vs SEO - Google executes JS! (but ...)</li>
+                <li>Best perceived performance</li>
+                <li>Uncanny valley</li>
+                <li>Server Side Includes</li>
+                <li>Cache utilization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>We all <span class="red">&lt;3</span> ES6</h2>
+            <h3>but do we ship it?</h3>
+
+            <pre style="box-shadow: none"><code class="html" data-trim data-escape>
+                &lt;!-- Browsers with ES module support load this file. --&gt;
+                &lt;script type="module" src="main.mjs"&gt;&lt;/script&gt;
+                
+                &lt;!-- Older browsers load this file (and module-supporting --&gt;
+                &lt;!-- browsers know *not* to load this file). --&gt;
+                &lt;script nomodule src="main.es5.js"&gt;&lt;/script&gt;
+            </code></pre>
+            <p>
+                <a href="https://philipwalton.com/articles/deploying-es2015-code-in-production-today/">
+                    -&gt; Deploying ES6+ Code in Production Today &lt;-
+                </a>
+            </p>
+        </section>
+
+        <section>
             <h2>User perception</h2>
 
             <div style="display: flex;
@@ -252,6 +367,10 @@
         </section>
 
         <section>
+            <img src="common/img/user_journey.png" alt="" class="plain">
+        </section>
+
+        <section>
             <h3 class="green">User happiness metrics - BBC</h3>
             <img src="common/img/bbc-metrics.png" alt="" class="plain">
         </section>
@@ -276,12 +395,9 @@
         </section>
 
         <section>
-            <h3>
-                '300KB of JS' !== '300KB of image'
-            </h3>
-            <img src="common/img/1MB-parse-times.jpeg" alt="" style="height: 12em" class="plain">
+            <img src="common/img/js_processing_cnn.png" alt="" style="height: 14em" class="plain">
             <div class="green" style="display:flex; justify-content: flex-end">
-                <a href="https://medium.com/reloading/javascript-start-up-performance-69200f43b201">[read more]</a>
+                <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">[read more]</a>
             </div>
         </section>
 
@@ -331,18 +447,21 @@
         <section>
             <h2>Web page test</h2>
 
-            <div class="replacement" style="">
+            <div class="replacement">
                 <div class="fragment fade-out" data-fragment-index="0">
                     <img src="common/img/bbc-web-page-test.png" alt="" style="height: 15em" class="plain">
                 </div>
                 <div class="fragment" data-fragment-index="0">
+                    <img src="common/img/bbc-web-page-test-3G.png" alt="" style="height: 15em" class="plain">
+                </div>
+                <div class="fragment" data-fragment-index="1">
                     <img src="common/img/welt-web-page-test.png" alt="" style="height: 15em" class="plain">
                 </div>
             </div>
         </section>
 
-        <section data-background-iframe="https://beta.httparchive.org/reports/state-of-the-web">
-            <h1>HTTP archive (beta)</h1>
+        <section data-background-iframe="https://httparchive.org/reports/state-of-the-web">
+            <h1>HTTP archive</h1>
         </section>
 
         <section>
@@ -394,16 +513,15 @@
                 <li class="green">
                     <a href="https://www.cypress.io/">[cypress]</a>
                 </li>
-                <li class="red">
-                    <a href="https://www.sitespeed.io/">[sitespeed.io]</a>
+                <li class="green">
+                    <a href="https://cucumber.io/">[cucumber js]</a>
                 </li>
                 <li class="red">
+                    <a href="https://www.sitespeed.io/">[sitespeed.io]</a>
                     <a href="https://developers.google.com/web/tools/lighthouse/">[lighthouse]</a>
                 </li>
                 <li class="red">
                     <a href="https://gatling.io/docs/current/">[Gatling]</a>
-                </li>
-                <li class="red">
                     <a href="https://artillery.io/">[Artillery]</a>
                 </li>
                 <li class="blue">
@@ -411,9 +529,23 @@
                 </li>
             </ul>
         </section>
-    
 
+        <section data-background-image="common/img/thats-all-folks.jpg">
+        </section>
 
+        <section>
+                <h2 style="font-size: 5em">
+                    <span class="blue">
+                        Q
+                    </span>
+                    <span class="black">
+                        &
+                    </span>
+                    <span class="green">
+                        A
+                    </span>
+                </h2>
+        </section>
         
     </div>
 </div>
